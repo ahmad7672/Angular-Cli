@@ -1,0 +1,65 @@
+<div class="row">
+    
+    <div class="container" *ngIf="myPost.hide == true">
+        <div class="col-sm-12 first-sec" >
+            <span class="glyphicon " (click)="bookMarkClick()" [class.bookMark]="myPost.bookMark" [class.glyphicon-star]="myPost.bookMark" [class.glyphicon-star-empty]=" !myPost.bookMark"></span>
+             <span class="glyphicon glyphicon-flag" (click)="reportClick()" [class.report]="myPost.report"  ></span>
+             <span class="glyphicon glyphicon-plus-sign"  (click)="hideClick()" [class.glyphicon-plus-sign]="myPost.hide" ></span>
+         </div>
+         
+         <div class="col-sm-12 sceond-sec">
+             
+             
+               
+                <img  src="./app/pic.png" class="img-circle " alt="Cinque Terre" width="50" height="50" >
+                <span>NAME</span> 
+                <span class="glyphicon glyphicon-triangle-bottom col-xs-push-9"></span> 
+                
+             
+             <div>
+               
+             </div>    
+             
+         </div>   
+         
+         
+            <div class="col-sm-12 post-body">
+            <ng-content></ng-content>   
+                
+            </div>  
+            
+            <div class="col-sm-12 fourth-sec">
+                 <span class="glyphicon glyphicon-thumbs-up" ></span>
+                 <span class="glyphicon glyphicon-pencil"></span>
+                 <span class="glyphicon glyphicon-share-alt" (click)="shareClick()"></span>
+                
+            </div>   
+            
+            
+            <div class="col-sm-12 fivth-sec">
+                
+                
+                
+                
+                <span>0</span> <span> comments</span>   
+                    
+                
+            </div>  
+            
+            
+            <div class="col-sm-12 sixth-sec">
+                
+                <input type="text" value="write a comment"/>
+                
+            </div>             
+        
+     </div>   
+    
+    <div class="container" *ngIf="myPost.hide == false">
+        
+        <span class="glyphicon " (click)="hideClick()" [class.glyphicon-minus-sign]="!myPost.hide"></span>
+        
+    </div>    
+    
+    
+</div>

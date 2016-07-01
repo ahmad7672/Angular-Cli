@@ -1,0 +1,54 @@
+.container{
+    
+    margin-top: 50px;
+    
+    background-color: #E6E6E6;
+    width: 600px
+}
+
+.first-sec span ,.fourth-sec span,.fivth-sec span{
+    
+    margin-left: 30px;
+    
+    margin-top: 20px;
+}
+
+.sceond-sec{
+    
+    padding-top: 20px;
+    
+    border: 1px solid silver;
+    margin-top: 15px;
+    height: 70px;
+}
+
+.sceond-sec img{
+ 
+margin-top: -10px;
+}
+.post-body{
+    
+    
+    background-color: white;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+.sixth-sec input{
+    
+    margin-top: 10px;
+    
+    width:540px;
+}
+
+
+.bookMark{
+    
+    color: gold;
+    
+}
+
+.report{
+    
+    color: red;
+}
